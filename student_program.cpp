@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 char* reverse( char str1[]) ;
 
@@ -10,7 +11,7 @@ int main() {
 }//end function
 
 char* reverse( char str1[]) {
-    printf( "Enter str1 : " ) ;
+    printf( "Enter Text : " ) ;
     fgets(str1 , 50 , stdin) ;
     str1[strcspn(str1 , "\n" )] = '\0' ; 
 
